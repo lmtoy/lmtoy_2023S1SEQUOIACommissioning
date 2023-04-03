@@ -10,8 +10,6 @@ import sys
 
 # in prep of the new lmtoy module
 try:
-    lmtoy = os.environ['LMTOY']
-    sys.path.append(lmtoy)
     from lmtoy import runs
 except:
     print("No LMTOY with runs.py")
@@ -26,7 +24,7 @@ on['chi-Cyg'] = [107662, 107664, 107665, 107666, 107667 ]
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
-pars1['chi-Cyg']   = "pix_list=-3,-13 extent=180"
+pars1['chi-Cyg']   = "pix_list=-3,-13 extent=120"
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}

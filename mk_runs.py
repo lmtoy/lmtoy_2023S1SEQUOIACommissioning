@@ -19,7 +19,7 @@ project="2023-S1-US-18"
 
 #        obsnums per source (make it negative if not added to the final combination)
 on = {}
-on['chi-Cyg'] = [107662, 107664, 107665, 107666, 107667 ]
+on['chi-Cyg'] = [-107662, 107664, 107665, 107666, 107667 ]      2-apr
 
 
 #        common parameters per source on the first dryrun (run1a, run2a)

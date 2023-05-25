@@ -1,0 +1,20 @@
+# Y-M-D   T H:M:S     ObsNum  Receiver   ObsGoal      ObgPgm      SourceName                ProjectId                   RestFreq      VLSR    TINT    RA          DEC        AZ     EL
+2023-04-20T09:24:00   108753  SEQ        Science      Ps          VX-Sgr                    2023S1SEQUOIACommissioning      86.3388     8       2.0  272.016833 -22.224139  153.1  44.2  -720 0
+2023-04-20T09:24:30   108754  SEQ        Science      Ps          VX-Sgr                    2023S1SEQUOIACommissioning      86.3388     8     150.1  272.016833 -22.224139  153.3  44.2  -720 0
+2023-04-20T09:28:28   108755  SEQ        Science      Cal         VX-Sgr                    2023S1SEQUOIACommissioning      86.3388     8       0.0  272.016833 -22.224139  154.4  44.6  -720 0
+2023-04-20T09:28:57   108756  SEQ        Science      Bs          VX-Sgr                    2023S1SEQUOIACommissioning      86.3388     8     151.3  272.016833 -22.224139  154.6  44.7  -720 0
+2023-04-20T09:38:56   108760  SEQ        Science      Ps          VX-Sgr                    2023S1SEQUOIACommissioning      86.3388     8     150.1  272.016833 -22.224139  157.5  45.7  -720 0
+2023-04-20T09:42:53   108761  SEQ        Science      Cal         VX-Sgr                    2023S1SEQUOIACommissioning      86.3388     8       0.0  272.016833 -22.224139  158.7  46.0  -720 0
+2023-04-20T09:43:17   108762  SEQ        Science      Bs          VX-Sgr                    2023S1SEQUOIACommissioning      86.3388     8     152.4  272.016833 -22.224139  158.9  46.0  -720 0
+2023-04-20T09:48:05   108764  SEQ        Science      Ps          VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8     150.0  272.016833 -22.224139  160.4  46.4  -720 0
+2023-04-20T09:52:09   108765  SEQ        Science      Cal         VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8       0.0  272.016833 -22.224139  161.7  46.7  -720 0
+2023-04-20T09:52:34   108766  SEQ        Science      Bs          VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8     153.2  272.016833 -22.224139  161.8  46.8  -720 0
+2023-04-20T10:02:33   108768  SEQ        Science      Map(Az/C)   M17SW                     2023S1SEQUOIACommissioning     115.2712    20    1284.0  275.115208 -16.200253  157.8  52.2  0 0
+2023-05-04T09:41:04   109461  SEQ        Science      Map(Az/C)   VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8     294.3  272.016833 -22.224139  176.6  48.7  -720 0
+2023-05-04T09:49:47   109463  SEQ        Science      Map(Ra/C)   VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8     296.2  272.016833 -22.224139  179.7  48.8  -720 0
+2023-05-04T09:58:32   109465  SEQ        Science      Map(Ra/C)   VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8     294.8  272.016833 -22.224139  182.7  48.7  -720 0
+2023-05-04T10:07:10   109467  SEQ        Science      Map(L/C)    VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8     294.1  272.016833 -22.224139  185.8  48.6  -720 0
+2023-05-08T03:57:17   109933  SEQ        Science      Map(Az/C)   R-Leo                     2023S1SEQUOIACommissioning      86.2434    -1     478.4  146.889500  11.428833  264.9  50.3  -720 0
+2023-05-08T04:11:44   109935  SEQ        Science      Map(Ra/C)   R-Leo                     2023S1SEQUOIACommissioning      86.2434    -1     476.6  146.889500  11.428833  266.4  46.8  -720 0
+2023-05-08T04:26:40   109937  SEQ        Science      Map(Ra/C)   R-Leo                     2023S1SEQUOIACommissioning      86.2434    -1     478.2  146.889500  11.428833  267.8  43.3  -720 0
+2023-05-08T04:45:21   109941  SEQ        Science      Map(L/C)    R-Leo                     2023S1SEQUOIACommissioning      86.2434    -1     477.7  146.889500  11.428833  269.4  38.9  -720 0

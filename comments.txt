@@ -1,10 +1,16 @@
 #  <obsnum>   <comment>     # <SLpipeline args>
 
+107664
+107665 -beam3 missing/bad ;
+107666 -beam3 
+107667 
+
 
 108756 Bs
 108762 Bs
 108766 Bs
 
+# M17 (Apr 20)
 108768 Az/El
 
 108770 -14,15
@@ -13,9 +19,18 @@
 108774 .
 
 108783 .
-108787 .
+108787 wide
 
-109461 Ra-Dec
+# first attempt, VX-Sgr   May 4
+109461 Ra-Dec medium
 109463 Ra-Dec
 109465 Ra-Dec
 109467 G-LatLon
+
+# new attempt, R-Leo May 8
+109933 Az/C medium -3?   -5,12,13  # dv=50 dw=50
+109935 Ra/C medium 
+109937 Ra/C medium
+109941 L/C  medium
+
+

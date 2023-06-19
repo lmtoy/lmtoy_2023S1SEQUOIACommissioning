@@ -1,6 +1,10 @@
 # 2023S1SEQUOIACommissioning
 
-this project ....
+Various SEQ commission tasks:
+
+1.  birdies
+2.  coordinate systems (Az-El, Ra-Dec, L-B)
+3.  efficiency difference small maps between Map(Ra/C) and Map(Ra/D)
 
 
 # chi-Cyg strong continuum
@@ -17,9 +21,6 @@ comparing different mapping strategies
 
 
 # birdies
-
-
-# birdies testing
 
 birdies generally have side-lobes.  In medium resolution mod 3 channels below and above:
 
@@ -44,3 +45,23 @@ An example of a wide channel with birdies:
       # chi-Cyg 115.271204,0
       SLpipeline.sh obsnum=107666 pix_list=-3,13 restart=1 dv=100 dw=900 extent=120 maskmoment=0
 
+
+# coordinate systems
+
+     # pix_list=-1,8 to easily identify the orientation of the array on the sky
+     # run2
+     SLpipeline.sh obsnum=109933 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
+     SLpipeline.sh obsnum=109935 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
+     SLpipeline.sh obsnum=109937 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
+     SLpipeline.sh obsnum=109941 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
+
+
+# Mapping Efficiencies
+
+
+     # RT-Vir
+     SLpipeline.sh obsnum=109963 restart=1 extent=100 pix_list=-13,14,15  # Az/D
+     SLpipeline.sh obsnum=109958 restart=1 extent=100 pix_list=-13,14,15  # Az/C
+     # CHI-Cyg
+     SLpipeline.sh obsnum=108783 restart=1 extent=120 pix_list=-13,14,15  # Ra/D
+     SLpipeline.sh obsnum=108787 restart=1 extent=120 pix_list=-13,14,15  # Ra/C

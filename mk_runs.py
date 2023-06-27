@@ -42,4 +42,4 @@ pars2["R-Leo"]     = "pix_list=-5,12,13"
 
 
 if __name__ == '__main__':    
-    runs.mk_runs(project, on, pars1, pars2)
+    runs.mk_runs(project, on, pars1, pars2, sys.argv)

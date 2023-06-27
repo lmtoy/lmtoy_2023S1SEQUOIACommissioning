@@ -48,6 +48,11 @@ An example of a wide channel with birdies:
 
 # coordinate systems
 
+     109933 MAP  Az/EL
+     109935 MAP  RA/DEC
+     109937 MAP  RA/DEC rot
+     109941 MAP  L/B
+
      # pix_list=-1,8 to easily identify the orientation of the array on the sky
      # run2
      SLpipeline.sh obsnum=109933 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
@@ -65,3 +70,21 @@ An example of a wide channel with birdies:
      # CHI-Cyg
      SLpipeline.sh obsnum=108783 restart=1 extent=120 pix_list=-13,14,15  # Ra/D
      SLpipeline.sh obsnum=108787 restart=1 extent=120 pix_list=-13,14,15  # Ra/C
+
+
+## Bs examples
+
+     108756 -- April 20  BS --  wrong freq -- shifted by 347 km/s
+     108762 -- April 20  BS --  wrong freq -- shifted by 347 km/s
+     108766 -- April 20  BS --  correct freq
+     Where are 2nd IF spectra?
+
+108766
+process_bs.py --obs_list 108766 -o junk2.txt --pix_list 8,10 --use_cal --block -2 --stype 2
+
+
+## Ps examples
+
+     108754 -- April 20  PS -- wrong freq
+     108760 -- April 20  PS -- not processed
+     108764 -- April 20  PS -- not processed

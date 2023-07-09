@@ -24,23 +24,47 @@ comparing different mapping strategies
 
 birdies generally have side-lobes.  In medium resolution mod 3 channels below and above:
 
+##  109941: 
+
       birdies=1021,1024,1027,2045,2048,2051,3069,3072,3075
       SLpipeline.sh obsnum=109941 restart=1 dv=100 dw=400 maskmoment=0 pix_list=-0 birdies=$birdies
 
       SLpipeline.sh obsnum=109941 restart=1 dv=50 dw=50 maskmoment=0 pix_list=-13 bank=0
 
-      # M17SW 115.271204  110.201353 	
+
+## 108768 :  M17, example of intermediate channels (400MHz, 4096 channels)
+
+       # M17SW 115.271204  110.201353 	
       SLpipeline.sh obsnum=108768 pix_list=-0,14,15 restart=1 dv=50 dw=400 extent=240  maskmoment=0
-      115.27120  birdies at 1024, 2048, 3072
-      110.20135  birdies at 1024, 2048, 3072
+       # bank=0 115.27120  birdies=1024,2048,3072
+       # bank=1 110.20135  birdies=1024,2048,3072
 
+## 107996 : An example of a wide channel (800MHz, 2048 channels) with birdies:
 
-An example of a wide channel with birdies:
+       # KZ-Peg 86.243442  88.631847 - Map/A/C
+       # first test which beams are bad
+      SLpipeline.sh obsnum=107996 restart=1 dv=50 dw=50
+       # bank=0 14,15 are very bad
+       # bank=1 all good, though beam 0 has oddly low Tsys (RMS higher too)
+      SLpipeline.sh obsnum=107996 pix_list=-14,15
 
-      # KZ-Peg 86.243442   88.631847 
-      SLpipeline.sh obsnum=107996 pix_list=-0,4,14,15 restart=1 dv=100 dw=1200 extent=120 maskmoment=0
-      86.243442   nchan=2048   birdies at 512, 1024, 1536
-      88.631847                no obvious birdies
+       # now  remove the bad beams over the full range of the band - we ignore the bad edge channels
+      SLpipeline.sh obsnum=107996 pix_list=-14,15 restart=1 dv=100 dw=1200 extent=120 maskmoment=0
+       # 86.243442   birdies=512,1024,1536    beam 1 large RMS mostly due to extreme channels
+       # 88.631847   no obvious birdies       beam 0,4 have missing data , tsys slow in low channels
+      SLpipeline.sh obsnum=107996 oid=0 bank=0 birdies=512,1024,1536 
+      SLpipeline.sh obsnum=107996 oid=1 bank=1 pix_list=-0,4 birdies=512,1024,1536 
+      mv 107996 107996__wide
+
+       # now focus on the maser line
+      SLpipeline.sh obsnum=107996 pix_list=-14,15 restart=1 dv=10 dw=20 extent=120 maskmoment=0
+       # bank 0, beams 2,6 looks negative, due to the birdies
+       # we skip birdies for bank 1
+      SLpipeline.sh obsnum=107996 oid=0 bank=0 birdies=512,1024,1536 
+      SLpipeline.sh obsnum=107996 oid=1 bank=1 pix_list=-0,4 birdies=0
+      mv 107996 107996__narrow
+
+## 107666
 
       # chi-Cyg 115.271204,0
       SLpipeline.sh obsnum=107666 pix_list=-3,13 restart=1 dv=100 dw=900 extent=120 maskmoment=0

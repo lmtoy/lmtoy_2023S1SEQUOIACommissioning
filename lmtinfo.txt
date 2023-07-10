@@ -208,6 +208,7 @@
 2023-02-15T12:37:35   105689  SEQ        Calibration  Cal         FS-Lib                    2023S1SEQUOIACommissioning      86.2434    -3       5.0  240.099050 -12.349263  173.5  58.4  239.76 0
 2023-02-15T12:38:02   105690  SEQ        Pointing     Map(Az/D)   FS-Lib                    2023S1SEQUOIACommissioning      86.2434    -3     144.8  240.099050 -12.349263  174.4  58.5  239.76 0
 2023-02-15T12:43:44   105691  SEQ        Calibration  Cal         RS-Lib                    2023S1SEQUOIACommissioning      86.2434     9       5.6  231.082462 -22.911062  190.1  47.4  239.76 0
+#
 2023-02-16T02:56:34   105693  SEQ        Calibration  Cal         Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5       5.1   83.810417  -5.375111  198.9  64.4  199.98 0
 2023-02-16T02:57:06   105694  SEQ        Pointing     Map(Az/C)   Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5      27.3   83.810417  -5.375111  200.2  64.2  199.98 0
 2023-02-16T03:11:25   105695  SEQ        Calibration  Cal         Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5       5.1   83.810417  -5.375111  207.6  62.8  199.98 0
@@ -228,6 +229,7 @@
 2023-02-16T03:32:13   105711  SEQ        Calibration  Cal         Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5       5.9   83.810417  -5.375111  217.0  60.2  199.98 0
 2023-02-16T03:32:47   105712  SEQ        Pointing     Map(Ra/C)   Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5      27.4   83.810417  -5.375111  217.2  60.1  199.98 0
 2023-02-16T03:49:23   105713  SEQ        Testing      On          Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5      10.0   83.810417  -5.375111  223.6  57.5  199.98 0
+#
 2023-02-17T02:36:18   105836  SEQ        Calibration  Cal         Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5       5.0   83.810417  -5.375111  189.3  65.4  199.98 0
 2023-02-17T02:36:48   105837  SEQ        Pointing     Map(Az/C)   Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5      27.6   83.810417  -5.375111  191.0  65.2  199.98 0
 2023-02-17T02:38:46   105838  SEQ        Calibration  Cal         Ori-KL                    2023S1SEQUOIACommissioning      86.2434    -5       5.0   83.810417  -5.375111  192.1  65.1  199.98 0
@@ -323,6 +325,7 @@
 2023-02-17T08:59:56   105940  SEQ        Pointing     Map(Az/D)   IRC+40156                 2023S1SEQUOIACommissioning      86.2434   -16     144.8   98.315658  40.714177  308.4  15.2  239.76 0
 2023-02-17T09:08:38   105941  SEQ        Calibration  Cal         U-Pup                     2023S1SEQUOIACommissioning      86.2434   -17       5.1  120.210373 -12.841423  249.1  17.7  239.76 0
 2023-02-17T09:09:12   105942  SEQ        Pointing     Map(Az/D)   U-Pup                     2023S1SEQUOIACommissioning      86.2434   -17     148.3  120.210373 -12.841423  249.3  17.1  239.76 0
+#
 2023-04-01T08:50:59   107570  SEQ        Calibration  Cal         W-Hya                     2023S1SEQUOIACommissioning      86.2434    41       5.0  207.258341 -28.367648  199.8  39.7  199.98 0
 2023-04-01T08:51:28   107571  SEQ        Pointing     Map(Az/C)   W-Hya                     2023S1SEQUOIACommissioning      86.2434    41      27.1  207.258341 -28.367648  200.0  39.6  199.98 0
 2023-04-01T08:55:51   107572  SEQ        Calibration  Cal         W-Hya                     2023S1SEQUOIACommissioning      86.2434    41       5.3  207.258341 -28.367648  201.1  39.3  -237.6 0
@@ -357,6 +360,7 @@
 2023-04-01T10:06:07   107601  SEQ        Pointing     Map(Az/D)   W-Hya                     2023S1SEQUOIACommissioning     115.2712    41     175.4  207.258341 -28.367648  217.2  31.1  199.98 0
 2023-04-01T10:12:59   107602  SEQ        Pointing     Map(Az/D)   W-Hya                     2023S1SEQUOIACommissioning     115.2712    41     179.5  207.258341 -28.367648  218.5  30.1  199.98 0
 2023-04-01T10:19:54   107603  SEQ        Pointing     Map(Az/D)   W-Hya                     2023S1SEQUOIACommissioning     115.2712    41     177.5  207.258341 -28.367648  219.8  29.0  199.98 0
+#
 2023-04-02T08:28:59   107638  SEQ        Calibration  Cal         W-Hya                     2023S1SEQUOIACommissioning      86.2434    41       5.0  207.258341 -28.367648  194.9  41.0  199.98 0
 2023-04-02T08:29:28   107639  SEQ        Pointing     Map(Az/C)   W-Hya                     2023S1SEQUOIACommissioning      86.2434    41      27.3  207.258341 -28.367648  195.0  40.9  199.98 0
 2023-04-02T08:32:45   107640  SEQ        Calibration  Cal         W-Hya                     2023S1SEQUOIACommissioning      86.2434    41       5.1  207.258341 -28.367648  195.9  40.7  -237.6 0
@@ -437,11 +441,13 @@
 2023-04-02T11:49:20   107716  SEQ        Pointing     Map(Az/D)   OH2.6-0.4                 2023S1SEQUOIACommissioning      86.2434    -4      81.5  268.328333 -26.943611  182.3  44.0  239.76 0
 2023-04-02T11:52:28   107717  SEQ        Calibration  Cal         IRC-30398                 2023S1SEQUOIACommissioning      86.2434    -8       5.0  284.807774 -29.838957  164.3  39.4  239.76 0
 2023-04-02T11:52:54   107718  SEQ        Pointing     Map(Az/D)   IRC-30398                 2023S1SEQUOIACommissioning      86.2434    -8      81.8  284.807774 -29.838957  164.5  39.4  239.76 0
+#
 2023-04-14T20:05:32   107796  SEQ        Calibration  Cal         Stay                      2023S1SEQUOIACommissioning      86.2434     0       5.0    0.000000   0.000000  360.0  10.0  239.76 0
 2023-04-14T20:48:38   107797  SEQ        Calibration  Cal         NV-Aur                    2023S1SEQUOIACommissioning      86.2434     3       5.0   77.831037  52.875895   20.7  52.4  239.76 0
 2023-04-14T20:52:11   107798  SEQ        Calibration  Cal         NV-Aur                    2023S1SEQUOIACommissioning      86.2434     3       5.2   77.831037  52.875895   19.8  52.7  239.76 0
 2023-04-14T21:19:56   107799  SEQ        Calibration  Cal         NV-Aur                    2023S1SEQUOIACommissioning      86.2434     3       5.0   77.831037  52.875895   14.4  54.4  239.76 0
 2023-04-14T21:21:38   107800  SEQ        Calibration  Cal         NV-Aur                    2023S1SEQUOIACommissioning      86.2434     3       5.0   77.831037  52.875895   13.0  54.7  239.76 0
+#
 2023-04-15T08:00:13   107899  SEQ        Calibration  Cal         W-Hya                     2023S1SEQUOIACommissioning      86.2434    41       5.1  207.258341 -28.367648  200.9  39.3  199.98 0
 2023-04-15T08:00:49   107900  SEQ        Pointing     Map(Az/C)   W-Hya                     2023S1SEQUOIACommissioning      86.2434    41      28.4  207.258341 -28.367648  201.1  39.3  199.98 0
 2023-04-15T08:06:44   107901  SEQ        Calibration  Cal         W-Hya                     2023S1SEQUOIACommissioning      86.2434    41       5.2  207.258341 -28.367648  202.6  38.8  199.98 0
@@ -556,6 +562,7 @@
 2023-04-15T12:48:01   108010  SEQ        Pointing     Map(Az/D)   GL5592                    2023S1SEQUOIACommissioning      86.2434   -22     140.2  317.531263 -38.517794  162.2  29.7  239.76 0
 2023-04-15T12:53:14   108011  SEQ        Calibration  Cal         S-Pav                     2023S1SEQUOIACommissioning      86.2434   -16       5.8  298.807500 -59.195700  180.0  11.9  239.76 0
 2023-04-15T12:53:44   108012  SEQ        Pointing     Map(Az/D)   S-Pav                     2023S1SEQUOIACommissioning      86.2434   -16     145.9  298.807500 -59.195700  180.1  11.9  239.76 0
+#
 2023-04-20T08:34:40   108726  SEQ        Calibration  Cal         VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8       5.0  272.016833 -22.224139  140.5  37.7  199.98 0
 2023-04-20T08:35:30   108727  SEQ        Pointing     Map(Az/C)   VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8      17.6  272.016833 -22.224139  140.7  37.9  199.98 0
 2023-04-20T08:38:44   108728  SEQ        Calibration  Cal         VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8       5.0  272.016833 -22.224139  141.4  38.3  199.98 0
@@ -616,6 +623,7 @@
 2023-04-20T11:53:24   108784  SEQ        Pointing     Cal         CHI-Cyg                   2023S1SEQUOIACommissioning     115.2712     9       5.0  297.641318  32.914043   27.0  74.1  -199.98 0
 2023-04-20T11:54:21   108786  SEQ        Calibration  Cal         CHI-Cyg                   2023S1SEQUOIACommissioning     115.2712     9       5.5  297.641318  32.914043   26.4  74.2  -199.98 0
 2023-04-20T11:55:01   108787  SEQ        Pointing     Map(Ra/C)   CHI-Cyg                   2023S1SEQUOIACommissioning     115.2712     9     140.5  297.641318  32.914043   25.9  74.2  -199.98 0
+#
 2023-05-04T08:13:26   109420  SEQ        Calibration  Cal         VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8       5.0  272.016846 -22.224064  148.8  42.4  199.98 0
 2023-05-04T08:14:03   109421  SEQ        Pointing     Map(Az/C)   VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8      27.5  272.016846 -22.224064  149.0  42.5  199.98 0
 2023-05-04T08:31:22   109422  SEQ        Calibration  Cal         VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8       5.0  272.016833 -22.224056  153.8  44.4  199.98 0
@@ -664,6 +672,7 @@
 2023-05-04T09:58:32   109465  SEQ        Science      Map(Ra/C)   VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8     294.8  272.016833 -22.224139  182.7  48.7  -720 0
 2023-05-04T10:06:33   109466  SEQ        Calibration  Cal         VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8       5.1  272.016833 -22.224139  185.5  48.6  -720 0
 2023-05-04T10:07:10   109467  SEQ        Science      Map(L/C)    VX-Sgr                    2023S1SEQUOIACommissioning      86.2434     8     294.1  272.016833 -22.224139  185.8  48.6  -720 0
+#
 2023-05-08T03:12:20   109905  SEQ        Calibration  Cal         R-Leo                     2023S1SEQUOIACommissioning      86.2434    -1       5.5  146.889517  11.428840  259.0  60.8  199.98 0
 2023-05-08T03:12:58   109906  SEQ        Pointing     Map(Az/C)   R-Leo                     2023S1SEQUOIACommissioning      86.2434    -1      27.3  146.889517  11.428840  259.1  60.7  199.98 0
 2023-05-08T03:14:50   109907  SEQ        Calibration  Cal         R-Leo                     2023S1SEQUOIACommissioning      86.2434    -1       5.3  146.889517  11.428840  259.4  60.2  199.98 0
@@ -706,6 +715,7 @@
 2023-05-08T07:00:50   109958  SEQ        Pointing     Map(Az/C)   RT-Vir                    2023S1SEQUOIACommissioning      86.2434    14      27.9  195.658265   5.185566  254.2  50.6  199.98 0
 2023-05-08T08:00:10   109962  SEQ        Calibration  Cal         RT-Vir                    2023S1SEQUOIACommissioning      86.2434    14       5.0  195.658265   5.185566  261.8  36.9  239.76 0
 2023-05-08T08:03:53   109963  SEQ        Pointing     Map(Az/D)   RT-Vir                    2023S1SEQUOIACommissioning      86.2434    14      81.8  195.658265   5.185566  262.2  36.0  239.76 0
+#
 2023-05-26T05:10:36   110002  SEQ        Calibration  Cal         U-Her                     2023S1SEQUOIACommissioning      86.2434   -15       5.0  246.447802  18.892462   86.6  68.3  199.98 0
 2023-05-26T05:14:34   110003  SEQ        Calibration  Cal         U-Her                     2023S1SEQUOIACommissioning      86.2434   -15       5.6  246.447802  18.892462   86.8  69.3  199.98 0
 2023-05-26T05:15:16   110004  SEQ        Pointing     Map(Az/C)   U-Her                     2023S1SEQUOIACommissioning      86.2434   -15      27.2  246.447802  18.892462   86.9  69.5  199.98 0

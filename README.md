@@ -12,8 +12,8 @@ Science projects in 2023-S1:
 1. 2023-S1-UM-8  - NGC4388 -  1 bank 800 MHz
 2. 2023-S1-MX-28 - TYC_2597_735_1 -  1 bank 800 MHz
 3. 2023-S1-MX-49 - L1157-B1 - 2 banks 400MHz - many birdies 
-4. 2023-S1-UM-15 - HB114_13CO
-5. 2023-S1-UM-16 - G1.7+3.7-234  [MarkH]
+4. 2023-S1-UM-15 - HB114_13CO - 1 bank mistake -  200MHz - w/ birdies
+5. 2023-S1-UM-16 - G1.7+3.7-234  [MarkH] 400MHz? 
 
 # Observations
 
@@ -24,9 +24,9 @@ Science projects in 2023-S1:
      2023-04-02T08:28:59 - 11:52:54  107638     only few pointings
      2023-04-14T20:05:32 - 21:21:38  107796     -
      2023-04-15T08:00:13 - 12:53:44  107899     only few pointings
-     2023-04-20T08:34:40 - 11:55:01  108726     VX-Sgr (Ps/Bs)  M17 (1x) CHI-Cyg (pointing)
-     2023-05-04T08:13:26 - 10:07:10  109420     VX-Sgr (4x), Bs/Ps different modes
-     2023-05-08T03:12:20 - 08:03:53  109905     RLeo (4x)
+     2023-04-20T08:34:40 - 11:55:01  108726     DAY1: VX-Sgr (Ps/Bs)  M17 (1x) CHI-Cyg (pointing)
+     2023-05-04T08:13:26 - 10:07:10  109420     DAY2: VX-Sgr (4x), Bs/Ps different modes
+     2023-05-08T03:12:20 - 08:03:53  109905     DAY3: RLeo (4x)
      2023-05-26T05:10:36 - 11:05:22  110002     U-Her,RR-Aql 
 
 # chi-Cyg strong continuum
@@ -133,23 +133,32 @@ Could it be that birdies only show up if the 2nd IF is present?
      109937 MAP  RA/DEC rot
      109941 MAP  L/B
 
-     # pix_list=-1,8 to easily identify the orientation of the array on the sky
-     # run2
+      # pix_list=-1,8 to easily identify the orientation of the array on the sky
+      # run2
      SLpipeline.sh obsnum=109933 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
      SLpipeline.sh obsnum=109935 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
      SLpipeline.sh obsnum=109937 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
      SLpipeline.sh obsnum=109941 restart=1 dv=50 dw=50 maskmoment=0 extent=240 pix_list=-1,8
 
+      # and checking if ds9 sees the same thing
+     SLpipeline.sh obsnum=109935 restart=1 dv=50 dw=50 maskmoment=0 extent=240
+     SLpipeline.sh obsnum=109935 oid=0 bank=0
+     SLpipeline.sh obsnum=109935 oid=1 bank=1
+
+     SLpipeline.sh obsnum=109941 restart=1 dv=50 dw=50 maskmoment=0 extent=240
+     mv 109941 109941__lb
+     SLpipeline.sh obsnum=109941 restart=1 dv=50 dw=50 maskmoment=0 extent=240 map_coord_use=1     
+     mv 109941 109941__rd
 
 # Mapping Efficiencies
 
 
      # RT-Vir
-     SLpipeline.sh obsnum=109963 restart=1 extent=100 pix_list=-13,14,15  # Az/D
-     SLpipeline.sh obsnum=109958 restart=1 extent=100 pix_list=-13,14,15  # Az/C
+     SLpipeline.sh obsnum=109963 restart=1 extent=100 pix_list=-13,14,15  # Az/D   1-IF
+     SLpipeline.sh obsnum=109958 restart=1 extent=100 pix_list=-13,14,15  # Az/C   2-IF
      # CHI-Cyg
-     SLpipeline.sh obsnum=108783 restart=1 extent=120 pix_list=-13,14,15  # Ra/D
-     SLpipeline.sh obsnum=108787 restart=1 extent=120 pix_list=-13,14,15  # Ra/C
+     SLpipeline.sh obsnum=108783 restart=1 extent=120 pix_list=-13,14,15  # Ra/D   2-IF
+     SLpipeline.sh obsnum=108787 restart=1 extent=120 pix_list=-13,14,15  # Ra/C   2-IF
 
 
 ## Bs examples
@@ -168,3 +177,94 @@ Could it be that birdies only show up if the 2nd IF is present?
      108754 -- April 20  PS -- wrong freq
      108760 -- April 20  PS -- not processed
      108764 -- April 20  PS -- not processed
+
+
+# Testing multi-IF mapping
+
+Here's the ongoing testing with the SLpipeline using bank= and oid= to test
+the multi-IF data, as well as backwards compatility with the older single-IF
+data.
+
+Starting in Feburary 2023 we have new numbands=2 data, though one dataset
+got messed up with numbands=2 and two restfreq's (the trigger for 2nd IF
+data is present)
+
+a. numbands=1  = old data - no __0 was used. we keep it that way - w
+b. numbands=2  = new data, but with one band in bank 0; the normal way
+c. numbands=2  = new data, but with one band in bank 1 (have no examples)
+d. numbands=2  = new data, with data in both banks
+e. numbands=2  = new data, with data in one bank, but restfreq shows 1 [bug]
+
+Examples with small amounts of data for debugging
+a.  94052  94048
+b.  107666      also:  109963 
+d.  109935 
+
+##  old single IF
+
+ # a: 1-IF  1-bank
+SLpipeline.sh obsnum=94052 restart=1    #  bad
+SLpipeline.sh obsnum=94048 restart=1    #  bad
+
+ # old bench1 data
+SLpipeline.sh obsnum=79448 restart=1 dv=20 dw=20     
+  -> ok, but no __oid   (does say bank=)
+SLpipeline.sh obsnum=79448
+  -> now showing __oid
+SLpipeline.sh obsnum=79448 dv=50 dw=50 vlsr=0
+  -> something doesn't look quite right
+
+ # and another way now
+SLpipeline.sh obsnum=79448 restart=1 dv=20 dw=20 pix_list=-1
+SLpipeline.sh obsnum=79448 dv=50 dw=50 vlsr=0                        # didn't catch the new vlsr
+SLpipeline.sh obsnum=79448 pix_list=-2                               # ok
+SLpipeline.sh obsnum=79448 dv=50 dw=50 vlsr=0 
+ # alternative also works
+SLpipeline.sh obsnum=79448 restart=1 dv=20 dw=20 bank=0
+
+ # combine:
+SLpipeline.sh obsnums=79448,79448 restart=1 bank=0
+-> doesn't work now
+
+
+
+
+
+## new dual IF
+
+ # b: 2-IF  1-bank
+SLpipeline.sh obsnum=107666 restart=1 pix_list=-3 dv=50 dw=50 extent=120 maskmoment=0
+  -> need -3, something bad
+SLpipeline.sh obsnum=107666 vlsr=10 dv=50 dw=100
+  -> ok now (default vlsr=10 was a bit off for chi-Cyg)
+  -> uses __0
+
+ # then combine
+SLpipeline.sh obsnums=107666,107666 restart=1
+  -> works, but doesn't say __0 and some pars are off now
+  
+
+ # d: 2-IF 2-bank
+debug=1
+
+SLpipeline.sh obsnum=109935 restart=1 dv=20 dw=20 maskmoment=0 extent=240      debug=$debug
+-> spectral coverage is for bank=1 for both
+SLpipeline.sh obsnum=109935 oid=0 bank=0                                       debug=$debug
+-> now good
+SLpipeline.sh obsnum=109935 oid=1 bank=1 pix_list=-0                        debug=$debug
+-> now good 
+SLpipeline.sh obsnum=109935 oid=1 bank=1 dv=40 dw=40                           debug=$debug
+-> not good, it's got beam 0 back!!!
+SLpipeline.sh obsnum=109935 oid=1 bank=1 dv=40 dw=40 pix_list=-0               debug=$debug
+-> would not work without the pix_list
+SLpipeline.sh obsnum=109935 oid=0 bank=0   
+-> ok
+
+# combo of one bank
+SLpipeline.sh obsnum=109935 restart=1 dv=20 dw=20 maskmoment=0 extent=240 oid=0 bank=0
+SLpipeline.sh obsnums=109935,109935 oid=0 bank=0  
+
+# NOW BAD
+# e. 105907/105908 & 105527
+SLpipeline.sh obsnum=105527 numbanks=-2 restart=1
+

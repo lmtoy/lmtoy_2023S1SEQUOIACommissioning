@@ -2,9 +2,8 @@
 
 107664
 107665 -beam3 missing/bad ;
-107666 -beam3 
+107666 -beam3 - no birdies
 107667 
-
 
 108756 Bs
 108762 Bs

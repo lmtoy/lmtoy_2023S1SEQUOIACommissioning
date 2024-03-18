@@ -152,13 +152,12 @@ Could it be that birdies only show up if the 2nd IF is present?
 
 # Mapping Efficiencies
 
-
      # RT-Vir
-     SLpipeline.sh obsnum=109963 restart=1 extent=100 pix_list=-13,14,15  # Az/D   1-IF
-     SLpipeline.sh obsnum=109958 restart=1 extent=100 pix_list=-13,14,15  # Az/C   2-IF
+     SLpipeline.sh obsnum=109963 restart=1 extent=150 pix_list=-13,14,15  # Az/D   1-IF
+     SLpipeline.sh obsnum=109958 restart=1 extent=150 pix_list=-13,14,15  # Az/C   2-IF
      # CHI-Cyg
-     SLpipeline.sh obsnum=108783 restart=1 extent=120 pix_list=-13,14,15  # Ra/D   2-IF
-     SLpipeline.sh obsnum=108787 restart=1 extent=120 pix_list=-13,14,15  # Ra/C   2-IF
+     SLpipeline.sh obsnum=108783 restart=1 extent=150 pix_list=-13,14,15  # Ra/D   2-IF
+     SLpipeline.sh obsnum=108787 restart=1 extent=150 pix_list=-13,14,15  # Ra/C   2-IF
 
 
 ## Bs examples

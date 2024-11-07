@@ -15,8 +15,10 @@ on["M17SW"]  = [ 108768,]                                                       
 
 on["R-Leo"]  = [ 109933, 109935, 109937, 109941,]                               # 8 may Map
 
-on["VX-Sgr"] = [ 108753, 108754, 108756, 108760, 108762, 108764, 108766,        # Ps/Bs
+on["VX-Sgr"] = [ 108753, 108754, 108756, 108760, 108762,                        # Ps/Bs
                  109461, 109463, 109465, 109467,]                               # 4-may Map
+
+on["VX-Sgr_S"] = [ 108764, 108766 ]                                             # Ps and Bs
 
 on['chi-Cyg'] = [-107662, 107664, 107665, 107666, 107667,                       # 2-apr Pointing
                  108772, 108774, 108775, 108776, 108777, 108780,
@@ -28,6 +30,7 @@ pars1 = {}
 pars1['chi-Cyg']   = "pix_list=-3,-13 extent=120"          # -3 is needed, or it will crash, 13 just high Tsys
 pars1["M17SW"]     = "dv=50 dw=50"
 pars1["VX-Sgr"]    = ""
+pars1["VX-Sgr_S"]  = ""
 #pars1["R-Leo"]     = "dv=50 dw=50 extent=240"
 pars1["R-Leo"]     = "extent=240"
 

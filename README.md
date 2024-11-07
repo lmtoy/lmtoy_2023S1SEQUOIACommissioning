@@ -159,23 +159,24 @@ Could it be that birdies only show up if the 2nd IF is present?
      SLpipeline.sh obsnum=108783 restart=1 extent=150 pix_list=-13,14,15  # Ra/D   2-IF
      SLpipeline.sh obsnum=108787 restart=1 extent=150 pix_list=-13,14,15  # Ra/C   2-IF
 
+## Ps examples
+
+SiO masers observed in dual-IF, setting to 86.2 (SiO) and 88.6 (HCN). The SiO line is about 25K, the HCN line about 0.1K.
+
+     # VX-Sgr 86.243442,88.631847 
+     108754 -- April 20  PS -- wrong freq
+     108760 -- April 20  PS -- 
+     108764 -- April 20  PS -- BENCH4
 
 ## Bs examples
 
+     # VX-Sgr 86.243442,88.631847 
      108756 -- April 20  BS --  wrong freq -- shifted by 347 km/s
      108762 -- April 20  BS --  wrong freq -- shifted by 347 km/s
-     108766 -- April 20  BS --  correct freq
-     Where are 2nd IF spectra?
+     108766 -- April 20  BS --  correct freq  BENCH4
 
       # 108766
      process_bs.py --obs_list 108766 -o junk2.txt --pix_list 8,10 --use_cal --block -2 --stype 2
-
-
-## Ps examples
-
-     108754 -- April 20  PS -- wrong freq
-     108760 -- April 20  PS -- not processed
-     108764 -- April 20  PS -- not processed
 
 
 # Testing multi-IF mapping

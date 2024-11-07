@@ -5,8 +5,8 @@
 107666 -beam3 - no birdies
 107667 
 
-108756 Bs
-108762 Bs
+108756 Bs wrong freq
+108762 Bs wrong freq
 108766 Bs
 
 # M17 (Apr 20)
